@@ -1,11 +1,5 @@
-
 var a = document.getElementById("lorem").innerHTML;
 var ipsum = parseInt(a, 10);
-
-//element.innerHTML
-
-
-
 
 function random(items) {
 	return items[Math.floor(Math.random() * items.length)];
