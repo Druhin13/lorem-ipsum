@@ -6,9 +6,9 @@ function random(items) {
 }
 
 
-var i,j;
-var word = "",
-	sentence = "";
+var i, j;
+var word = "";
+var sentence = "";
 var h1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -23,9 +23,9 @@ for (i = 1; i <= ipsum; i++) {
 		var letter = random(h1);
 		word = word + letter;
 	}
+
+	sentence = sentence + " " + word;
 	word = "";
-	sentence = sentence + word;
-
 }
-
 console.log(sentence);
+document.getElementById("lorem").innerHTML = sentence;
