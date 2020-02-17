@@ -23,15 +23,7 @@ for (var i = 0; i < words.length; i++) {
 	words[i] += " ";
 }
 
-var a = document.getElementsByClassName("lorem")[k].innerHTML;
-var ipsum = parseInt(a, 10);
-//how many words needed
 
-
-for (j = 0; j < ipsum; j++) {
-	sentence = sentence + words[k] + " ";
-}
-console.log(sentence);
 
 
 
@@ -39,11 +31,16 @@ console.log(sentence);
 
 for (k = 0; k < x; k++) {
 
-	//var a = document.getElementsByClassName("lorem")[k].innerHTML;
-	//console.log(a);
-
+	var a = document.getElementsByClassName("lorem")[k].innerHTML;
 	var ipsum = parseInt(a, 10);
-	//console.log(ipsum);
+	//how many words needed
+
+
+	for (j = 0; j < ipsum; j++) {
+		sentence = sentence + words[k] + " ";
+	}
+	console.log(sentence);
+
 
 	//no. of words
 	for (i = 1; i <= ipsum; i++) {
