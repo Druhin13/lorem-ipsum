@@ -12,7 +12,7 @@ function random(items) {
 	return items[Math.floor(Math.random() * items.length)];
 }
 
-var z = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est."
+var z = "Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est"
 //45 words
 
 var words = z.split(" ");
@@ -36,6 +36,7 @@ for (k = 0; k < x; k++) {
 	}
 	console.log(sentence);
 
-	document.getElementsByClassName("lorem")[k].innerHTML = sentence;
+
+	document.getElementsByClassName("lorem")[k].innerHTML = sentence.slice(0, -2) + ".";
 	sentence = "";
 }
