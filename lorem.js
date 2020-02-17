@@ -32,7 +32,7 @@ for (k = 0; k < x; k++) {
 	//how many words needed
 
 	for (j = 0; j < ipsum; j++) {
-		sentence = sentence + words[k] + " ";
+		sentence = sentence + words[j] + " ";
 	}
 	console.log(sentence);
 
