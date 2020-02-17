@@ -5,7 +5,7 @@ var i, j, k;
 var word = "";
 var sentence = "";
 //var h1 = [""];
-var n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
 
 //random funtion
 function random(items) {
@@ -23,10 +23,6 @@ for (i = 0; i < words.length; i++) {
 	words[i] += " ";
 }
 
-
-
-
-
 //looping no. of times 'lorem' is there
 
 for (k = 0; k < x; k++) {
@@ -34,7 +30,6 @@ for (k = 0; k < x; k++) {
 	var a = document.getElementsByClassName("lorem")[k].innerHTML;
 	var ipsum = parseInt(a, 10);
 	//how many words needed
-
 
 	for (j = 0; j < ipsum; j++) {
 		sentence = sentence + words[k] + " ";
