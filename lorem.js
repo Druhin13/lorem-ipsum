@@ -19,13 +19,19 @@ var words = z.split(" ");
 //45 words ready to deploy
 //console.log(words);
 
-var a = document.getElementsByClassName("lorem")[k].innerHTML;
-//how many words needed
-
 for (var i = 0; i < words.length; i++) {
 	words[i] += " ";
 }
 
+var a = document.getElementsByClassName("lorem")[k].innerHTML;
+var ipsum = parseInt(a, 10);
+//how many words needed
+
+
+for (j = 0; j < ipsum; j++) {
+	sentence = sentence + words[k] + " ";
+}
+console.log(sentence);
 
 
 
