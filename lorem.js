@@ -19,7 +19,7 @@ var words = z.split(" ");
 //45 words ready to deploy
 //console.log(words);
 
-for (var i = 0; i < words.length; i++) {
+for (i = 0; i < words.length; i++) {
 	words[i] += " ";
 }
 
@@ -41,22 +41,6 @@ for (k = 0; k < x; k++) {
 	}
 	console.log(sentence);
 
-
-	//no. of words
-	for (i = 1; i <= ipsum; i++) {
-
-		//no. of letters
-		var l = random(n);
-
-		for (j = 1; j <= l; j++) {
-			//var letter = random(h1);
-
-			word = word + letter;
-		}
-
-		sentence = sentence + " " + word;
-		word = "";
-	}
 	document.getElementsByClassName("lorem")[k].innerHTML = sentence;
 	sentence = "";
 }
